@@ -1,0 +1,19 @@
+{
+  "name": "project3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jelena991/project3.git"
+  },
+  "author": "Jelena",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jelena991/project3/issues"
+  },
+  "homepage": "https://github.com/jelena991/project3#readme"
+}
