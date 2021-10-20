@@ -29,20 +29,6 @@ a {
   color: inherit;
 }
 
-header {
-  margin: 0;
-  padding: 10px;
-  text-align: center;
-  box-shadow: 0px 4px 13px -10px #000000;
-  z-index: 1;
-  position: relative;
-}
-
-.header-logo {
-  width: 50%;
-  padding: 10px;
-}
-
 .location {
   display: inline-flex;
   background-color: $background-darkergrey;
@@ -231,7 +217,6 @@ header {
   background-color: $backgroung-footer;
   color: #fff;
   padding: 35px;
-  
 
   &__logo {
     width: 30%;
@@ -249,11 +234,5 @@ header {
   &__item i {
     font-size: smaller;
     padding-right: 15px;
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  .header-icon {
-    display: none;
   }
 }
