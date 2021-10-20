@@ -1,0 +1,166 @@
+.location {
+  display: inline-flex;
+  background-color: $background-darkergrey;
+  width: 100%;
+  padding: 20px;
+  font-size: 18px;
+  &__items {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    &--place {
+      margin-left: 15px;
+    }
+  }
+}
+
+.hero {
+  background-color: $background-lightgrey;
+  padding: 50px;
+  &__items {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    &--header {
+      font-size: 30px;
+    }
+    &--text {
+      font-weight: 100;
+      font-size: 21px;
+    }
+    &--button {
+      width: 260px;
+      font-size: 18px;
+      color: #fff;
+      cursor: pointer;
+      margin: 20px;
+      height: 55px;
+      text-align: center;
+      border: none;
+      border-radius: 50px;
+      background-image: linear-gradient(
+        to top,
+        $color-primary,
+        $color-secondary
+      );
+    }
+  }
+}
+
+.introduction {
+  padding: 35px;
+  margin-bottom: 30px;
+  &__header {
+    font-size: 25px;
+    padding: 23px 0;
+  }
+  &__cards {
+    display: flex;
+    flex-direction: column;
+  }
+  &__card {
+    display: flex;
+    background-color: $background-lightgrey;
+    box-shadow: 0px 0px 10px rgba($color: #000000, $alpha: 0.25);
+    border-radius: 25px;
+    max-width: 408px;
+    height: 85px;
+    position: relative;
+    margin: 15px;
+    align-items: center;
+
+    &--badge {
+      position: absolute;
+      color: #fff;
+      background-color: $color-primary;
+      width: 25px;
+      height: 25px;
+      border-radius: 50%;
+      padding: 5px;
+      font-size: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      top: 30px;
+      left: -15px;
+      z-index: 2;
+    }
+    &--icon {
+      font-size: 25px;
+      color: $color-icons;
+      padding-left: 30px;
+    }
+
+    &--iconlist {
+      font-size: 20px;
+    }
+
+    &--iconstore {
+      color: $color-primary;
+      font-size: 20px;
+    }
+
+    &--text {
+      font-size: 20px;
+      padding-left: 30px;
+    }
+
+    &--pink {
+      background-color: lighten($color-primary, 35%);
+    }
+  }
+}
+
+.restaurants {
+  background-color: $background-lightgrey;
+  padding: 30px;
+  &__header {
+    font-size: 25px;
+    padding: 30px 0;
+  }
+}
+
+.restaurant-card {
+  &--badge {
+    position: absolute;
+    color: darken($color-tertiary, 40%);
+    background-color: $color-tertiary;
+    padding: 8px;
+    margin-top: 15px;
+    width: 100px;
+    border-radius: 5px;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 50px;
+    z-index: 2;
+  }
+  &__image {
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    height: 210px;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  &__content {
+    &--icon {
+      justify-self: end;
+      align-self: center;
+      font-size: 30px;
+      padding-right: 10px;
+    }
+    &--text {
+      font-size: 18px;
+      line-height: 30px;
+
+      p {
+        font-weight: 100;
+      }
+    }
+  }
+}

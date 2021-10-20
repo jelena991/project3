@@ -4,23 +4,228 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&family=Shrikhand&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/style.css" />
     <title>Document</title>
   </head>
   <body>
-    <header>
-      <span class="header-icon">
-        <a href="">
-          <i class="fas fa-arrow-left"></i>
-        </a>
-      </span>
-      <a href="#">
+    <header class="header">
+      <a href="index.html" class="header-icon">
+        <i class="fas fa-arrow-left"></i>
+      </a>
+
+      <a href="index.html" class="header__logo">
         <img
-          class="header-logo"
+          class="header__logo--img"
           src="images/logo/ohmyfood.png"
           alt="ohmyfood logo"
         />
       </a>
     </header>
+
+    <main>
+      <div class="background__image">
+        <img
+          class="background__image"
+          src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
+          alt=""
+        />
+      </div>
+
+      <section class="menu">
+        <div class="menu-header">
+          <h1 class="menu__header--heading title">Bastille</h1>
+          <i class="far fa-heart"></i>
+        </div>
+
+        <div class="menu-group">
+          <div class="menu-group__subheader">
+            <h3 class="menu-group__subheader--heading">Entrees</h3>
+            <hr class="menu-group__subheader--devider" />
+          </div>
+
+          <div class="cards">
+            <a href="#">
+              <div class="card menu-card">
+                <div class="card__content menu-card__content">
+                  <div class="menu-card__content--text">
+                    <h3>Citrus Squid Carpaccio</h3>
+                    <p>with orange zest</p>
+                  </div>
+                  <div class="menu-card__content--price">
+                    <p>25&euro;</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+
+            <a href="#">
+              <div class="card menu-card">
+                <div class="card__content menu-card__content">
+                  <div class="menu-card__content--text">
+                    <h3>Grandmother's Vegetable Soup</h3>
+                    <p>Carrots, parsnips, Jerusalemartichoke</p>
+                  </div>
+                  <div class="menu-card__content--price">
+                    <p>35&euro;</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+
+            <a href="#">
+              <div class="card menu-card">
+                <div class="card__content menu-card__content">
+                  <div class="menu-card__content--text">
+                    <h3>Onion Soup</h3>
+                    <p>Revisited</p>
+                  </div>
+                  <div class="menu-card__content--price">
+                    <p>20&euro;</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="menu-group">
+          <div class="menu-group__subheader">
+            <h3 class="menu-group__subheader--heading">Main Dish</h3>
+            <hr class="menu-group__subheader--devider" />
+          </div>
+
+          <div class="cards">
+            <a href="#">
+              <div class="card menu-card">
+                <div class="card__content menu-card__content">
+                  <div class="menu-card__content--text">
+                    <h3>Scallops</h3>
+                    <p>with mashed parsnip</p>
+                  </div>
+                  <div class="menu-card__content--price">
+                    <p>40&euro;</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+
+            <a href="#">
+              <div class="card menu-card">
+                <div class="card__content menu-card__content">
+                  <div class="menu-card__content--text">
+                    <h3>Magret de canard</h3>
+                    <p>with mashed potatoes</p>
+                  </div>
+                  <div class="menu-card__content--price">
+                    <p>35&euro;</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+
+            <a href="#">
+              <div class="card menu-card">
+                <div class="card__content menu-card__content">
+                  <div class="menu-card__content--text">
+                    <h3>Game Hen</h3>
+                    <p>with vegetable gnocchis</p>
+                  </div>
+                  <div class="menu-card__content--price">
+                    <p>44&euro;</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="menu-group">
+          <div class="menu-group__subheader">
+            <h3 class="menu-group__subheader--heading">Desserts</h3>
+            <hr class="menu-group__subheader--devider" />
+          </div>
+
+          <div class="cards">
+            <a href="#">
+              <div class="card menu-card">
+                <div class="card__content menu-card__content">
+                  <div class="menu-card__content--text">
+                    <h3>Floral Ice Cream</h3>
+                    <p>with hazelnut butter</p>
+                  </div>
+                  <div class="menu-card__content--price">
+                    <p>18&euro;</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+
+            <a href="#">
+              <div class="card menu-card">
+                <div class="card__content menu-card__content">
+                  <div class="menu-card__content--text">
+                    <h3>Chocolate Lava Cake</h3>
+                    <p>Revisited</p>
+                  </div>
+                  <div class="menu-card__content--price">
+                    <p>22&euro;</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+
+            <a href="#">
+              <div class="card menu-card">
+                <div class="card__content menu-card__content">
+                  <div class="menu-card__content--text">
+                    <h3>Napolean</h3>
+                    <p>with blueberries and marzipan</p>
+                  </div>
+                  <div class="menu-card__content--price">
+                    <p>23&euro;</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <a href="#">
+        <img class="footer__logo" src="images/logo/ohmyfood.png" alt="" />
+      </a>
+
+      <div class="footer__items">
+        <div class="footer__item">
+          <i class="fas fa-utensils"></i>
+          <a href="#">Suggest a restaurant</a>
+        </div>
+
+        <div class="footer__item">
+          <i class="fas fa-hands-helping"></i>
+          <a href="#">Become a partner</a>
+        </div>
+
+        <div class="footer__item">
+          <a href="#">Legal</a>
+        </div>
+
+        <div class="footer__item">
+          <a href="#">Contact</a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
