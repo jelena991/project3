@@ -101,18 +101,6 @@ a {
   font-weight: 100;
   font-size: 21px;
 }
-.hero__items--button {
-  width: 260px;
-  font-size: 18px;
-  color: #fff;
-  cursor: pointer;
-  margin: 20px;
-  height: 55px;
-  text-align: center;
-  border: none;
-  border-radius: 50px;
-  background-image: linear-gradient(to top, #9356dc, #ff79da);
-}
 
 .introduction {
   padding: 35px;
@@ -264,6 +252,13 @@ a {
   padding-right: 10px;
 }
 
+.menu-button {
+  text-align: center;
+}
+.menu-button > button {
+  width: 200px;
+}
+
 .cards {
   display: flex;
   flex-direction: column;
@@ -282,6 +277,19 @@ a {
   grid-template-columns: 60% 1fr;
   justify-items: start;
   padding: 15px;
+}
+
+.button {
+  width: 260px;
+  font-size: 18px;
+  color: #fff;
+  cursor: pointer;
+  margin: 20px;
+  height: 55px;
+  text-align: center;
+  border: none;
+  border-radius: 50px;
+  background-image: linear-gradient(to top, #9356dc, #ff79da);
 }
 
 /*# sourceMappingURL=style.css.map */
