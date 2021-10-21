@@ -53,3 +53,10 @@
     }
   }
 }
+
+.menu-button {
+  text-align: center;
+  & > button{
+    width: 200px;
+  }
+}
