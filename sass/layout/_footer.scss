@@ -16,8 +16,12 @@
     flex-direction: column;
   }
 
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
   &__item i {
-    font-size: smaller;
-    padding-right: 15px;
+    width: 15px;
   }
 }

@@ -7,15 +7,17 @@
 
 .card {
   height: 100%;
-  box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+  box-shadow: $shadow;
   background-color: #fff;
   border-radius: 25px;
   &__content {
     display: grid;
-    grid-template-columns: 60% 1fr;
+    grid-template-columns: 75% 1fr;
     justify-items: start;
     padding: 15px;
+    line-height: 25px;
   }
+  
 }
 
 

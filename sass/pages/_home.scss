@@ -2,8 +2,8 @@
   display: inline-flex;
   background-color: $background-darkergrey;
   width: 100%;
-  padding: 20px;
-  font-size: 18px;
+  padding: 15px;
+  font-size: 17px;
   &__items {
     display: flex;
     flex: 1;
@@ -16,7 +16,7 @@
 
 .hero {
   background-color: $background-lightgrey;
-  padding: 50px;
+  padding: 35px;
   &__items {
     display: flex;
     flex-direction: column;
@@ -25,35 +25,39 @@
     justify-content: space-between;
     align-items: center;
     &--header {
-      font-size: 30px;
+      font-size: 25px;
     }
     &--text {
-      font-weight: 100;
-      font-size: 21px;
+      font-weight: 300;
+      font-size: 18px;
     }
   }
 }
 
 .introduction {
-  padding: 35px;
-  margin-bottom: 30px;
+  padding: 15px;
+  margin-bottom: 50px;
   &__header {
-    font-size: 25px;
-    padding: 23px 0;
+    font-size: 20px;
+    padding: 35px 20px 30px 15px;
   }
   &__cards {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding-left: 15px;
   }
   &__card {
-    display: flex;
+    display: grid;
+    grid-template-columns: 15% 85%;
+    padding-left: 25px;
     background-color: $background-lightgrey;
     box-shadow: 0px 0px 10px rgba($color: #000000, $alpha: 0.25);
     border-radius: 25px;
-    max-width: 408px;
-    height: 85px;
+    height: 75px;
+    max-width: 400px;
     position: relative;
-    margin: 15px;
     align-items: center;
 
     &--badge {
@@ -64,7 +68,7 @@
       height: 25px;
       border-radius: 50%;
       padding: 5px;
-      font-size: 15px;
+      font-size: 13px;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -88,7 +92,7 @@
     }
 
     &--text {
-      font-size: 20px;
+      font-size: 17px;
       padding-left: 30px;
     }
 
@@ -100,10 +104,10 @@
 
 .restaurants {
   background-color: $background-lightgrey;
-  padding: 30px;
+  padding: 20px;
   &__header {
-    font-size: 25px;
-    padding: 30px 0;
+    font-size: 20px;
+    padding: 35px 0px 20px;
   }
 }
 
@@ -112,21 +116,21 @@
     position: absolute;
     color: darken($color-tertiary, 40%);
     background-color: $color-tertiary;
-    padding: 8px;
+    padding: 5px;
     margin-top: 15px;
-    width: 100px;
-    border-radius: 5px;
-    font-size: 15px;
+    width: 80px;
+    border-radius: 3px;
+    font-size: 14px;
     display: flex;
     align-items: center;
     justify-content: center;
-    right: 50px;
+    right: 30px;
     z-index: 2;
   }
   &__image {
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
-    height: 210px;
+    height: 175px;
     width: 100%;
     object-fit: cover;
   }
@@ -135,15 +139,15 @@
     &--icon {
       justify-self: end;
       align-self: center;
-      font-size: 30px;
-      padding-right: 10px;
+      font-size: 25px;
     }
     &--text {
-      font-size: 18px;
-      line-height: 30px;
+      font-size: 15px;
+      line-height: 24px;
 
       p {
         font-weight: 100;
+        font-size: 17px;
       }
     }
   }
