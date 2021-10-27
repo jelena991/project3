@@ -253,16 +253,6 @@ a {
   border: 2px solid #99e2d0;
 }
 
-.menu-card__content--text {
-  font-weight: 100;
-}
-.menu-card__content--price {
-  justify-self: end;
-  align-self: flex-end;
-  font-size: 18px;
-  padding-right: 10px;
-}
-
 .menu-button {
   text-align: center;
 }
@@ -270,6 +260,79 @@ a {
   width: 200px;
 }
 
+.button {
+  width: 220px;
+  font-size: 16px;
+  color: #fff;
+  cursor: pointer;
+  margin: 15px;
+  height: 50px;
+  text-align: center;
+  border: none;
+  border-radius: 50px;
+  background-image: linear-gradient(to top, #9356dc, #ff79da);
+  box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+  transition: transform 450ms;
+}
+.button:hover {
+  transform: scale(1.13);
+  background: linear-gradient(356deg, #a16be0, #ff88de);
+  box-shadow: 0 1px 15px rgba(104, 104, 104, 0.8);
+}
+
+.fa-heart {
+  color: white;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  font-size: 1.8em;
+  transition: transform 150ms, color 350ms;
+}
+.fa-heart:hover {
+  transform: scale(1.08);
+  -webkit-text-stroke: 0;
+  background-image: -webkit-gradient(linear, right top, left bottom, color-stop(0.4, #9356dc), color-stop(1, #ff79da));
+  background-image: gradient(linear, right top, left bottom, color-stop(0.4, #9356dc), color-stop(1, #ff79da));
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.loading-wrapper {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+}
+
+.loading--full-hight {
+  align-items: center;
+  height: 100%;
+}
+
+.loading::after {
+  content: "";
+  width: 100px;
+  height: 100px;
+  border: 10px solid #f6f6f6;
+  border-top-color: #99e2d0;
+  border-radius: 50%;
+  animation: loading 1s ease infinite;
+}
+
+@keyframes loading {
+  to {
+    transform: rotate(1turn);
+  }
+}
 .cards {
   display: flex;
   flex-direction: column;
@@ -291,39 +354,14 @@ a {
   line-height: 25px;
 }
 
-.button {
-  width: 220px;
-  font-size: 16px;
-  color: #fff;
-  cursor: pointer;
-  margin: 15px;
-  height: 50px;
-  text-align: center;
-  border: none;
-  border-radius: 50px;
-  background-image: linear-gradient(to top, #9356dc, #ff79da);
-  box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
-  transition: transform 450ms;
+.menu-card__content--text {
+  font-weight: 100;
 }
-.button:hover {
-  transform: scale(1.13);
-}
-
-.fa-heart {
-  color: white;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: black;
-  font-size: 1.8em;
-  transition: transform 150ms, color 350ms;
-}
-.fa-heart:hover {
-  transform: scale(1.08);
-  -webkit-text-stroke: 0;
-  background-image: -webkit-gradient(linear, right top, left bottom, color-stop(0.4, #9356dc), color-stop(1, #ff79da));
-  background-image: gradient(linear, right top, left bottom, color-stop(0.4, #9356dc), color-stop(1, #ff79da));
-  color: transparent;
-  -webkit-background-clip: text;
-  background-clip: text;
+.menu-card__content--price {
+  justify-self: end;
+  align-self: flex-end;
+  font-size: 18px;
+  padding-right: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */

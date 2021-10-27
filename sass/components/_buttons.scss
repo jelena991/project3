@@ -13,5 +13,11 @@
   transition: transform 450ms;
   &:hover {
     transform: scale(1.13);
+    background: linear-gradient(
+      356deg,
+      lighten($color-primary, 5%),
+      lighten($color-secondary, 3%)
+    );
+    box-shadow: 0 1px 15px rgba(104, 104, 104, 0.8);
   }
 }

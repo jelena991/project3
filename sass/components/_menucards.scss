@@ -1,0 +1,36 @@
+
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 50px;
+}
+
+.card {
+  height: 100%;
+  box-shadow: $shadow;
+  background-color: #fff;
+  border-radius: 25px;
+  &__content {
+    display: grid;
+    grid-template-columns: 75% 1fr;
+    justify-items: start;
+    padding: 15px;
+    line-height: 25px;
+  }
+}
+
+.menu-card {
+  &__content {
+    &--text {
+      font-weight: 100;
+    }
+    &--price {
+      justify-self: end;
+      align-self: flex-end;
+      font-size: 18px;
+      padding-right: 10px;
+    }
+  }
+}
