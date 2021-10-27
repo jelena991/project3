@@ -1,0 +1,28 @@
+.fa-heart {
+  color: white;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  font-size: 1.8em;
+  transition: transform 150ms, color 350ms;
+  &:hover {
+    transform: scale(1.08);
+    -webkit-text-stroke: 0;
+    background-image: -webkit-gradient(
+      linear,
+      right top,
+      left bottom,
+      color-stop(0.4, #9356dc),
+      color-stop(1, #ff79da)
+    );
+    background-image: gradient(
+      linear,
+      right top,
+      left bottom,
+      color-stop(0.4, #9356dc),
+      color-stop(1, #ff79da)
+    );
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+  }
+}
