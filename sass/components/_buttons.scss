@@ -10,4 +10,8 @@
   border-radius: 50px;
   background-image: linear-gradient(to top, $color-primary, $color-secondary);
   box-shadow: $shadow;
+  transition: transform 450ms;
+  &:hover {
+    transform: scale(1.13);
+  }
 }

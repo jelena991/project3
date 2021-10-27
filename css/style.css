@@ -303,6 +303,10 @@ a {
   border-radius: 50px;
   background-image: linear-gradient(to top, #9356dc, #ff79da);
   box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+  transition: transform 450ms;
+}
+.button:hover {
+  transform: scale(1.13);
 }
 
 .fa-heart {

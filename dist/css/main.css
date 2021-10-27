@@ -413,6 +413,15 @@ a {
   background-image: linear-gradient(to top, #9356dc, #ff79da);
   -webkit-box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
           box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+  -webkit-transition: -webkit-transform 450ms;
+  transition: -webkit-transform 450ms;
+  transition: transform 450ms;
+  transition: transform 450ms, -webkit-transform 450ms;
+}
+
+.button:hover {
+  -webkit-transform: scale(1.13);
+          transform: scale(1.13);
 }
 
 .fa-heart {
