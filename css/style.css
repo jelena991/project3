@@ -15,6 +15,7 @@ header {
   padding: 10px;
   box-shadow: 0px 4px 13px -10px #000000;
   z-index: 1;
+  text-align: center;
   position: relative;
   display: flex;
   align-items: center;
@@ -22,14 +23,13 @@ header {
 }
 
 .header__logo {
-  width: 50%;
-  padding: 10px;
+  max-width: 200px;
 }
 
 .header-icon {
+  position: absolute;
+  left: 20px;
   font-size: 20px;
-  padding-left: 20px;
-  flex: 0 0 40%;
 }
 
 .footer {
@@ -281,7 +281,7 @@ a {
 }
 
 .fa-heart {
-  color: white;
+  color: #f6f6f6;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
   font-size: 1.8em;
@@ -335,33 +335,76 @@ a {
 }
 .cards {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   gap: 20px;
   margin-bottom: 50px;
 }
 
-.card {
-  height: 100%;
+.menu-card {
   box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
   background-color: #fff;
   border-radius: 25px;
 }
-.card__content {
-  display: grid;
-  grid-template-columns: 75% 1fr;
-  justify-items: start;
-  padding: 15px;
-  line-height: 25px;
+.menu-card__content {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  padding: 1rem;
+  position: relative;
 }
-
 .menu-card__content--text {
   font-weight: 100;
+  line-height: 25px;
 }
 .menu-card__content--price {
   justify-self: end;
   align-self: flex-end;
+}
+
+.menu-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+@media only screen and (min-width: 800px) {
+  .menu-wrapper {
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .menu-group {
+    flex: 1;
+    height: 100%;
+    width: 100%;
+  }
+}
+.tick {
+  height: 80 px;
+  width: 10%;
+  padding: 0 px 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: absolute;
+  right: 0 px;
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+  -webkit-transform-origin: right;
+  -ms-transform-origin: right;
+  transform-origin: right;
+  color: #fff;
+  background-color: #99e2d0;
+  border-radius: 0 px 15 px 15 px 0 px;
   font-size: 18px;
-  padding-right: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */
