@@ -1,13 +1,45 @@
+$delays: (
+  loading_page_delay: 3000ms,
+  main_page_delay: 3500ms,
+  item_delay: 3500ms,
+);
+
+@keyframes opacity{
+  from{
+      opacity: 1;
+  }
+  to{
+      opacity: 0;
+  }
+}
+
+@keyframes loading {
+  to {
+    transform: rotate(1turn);
+  }
+}
+
 .loading-wrapper {
+  box-sizing: border-box;
   width: 100%;
   height: 100%;
-  position: absolute;
   top: 0;
   left: 0;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+  background-color: $background-opacity;
+  animation: opacity 500ms map-get($delays, loading_page_delay) linear
+    both;
 }
+
+$delay: map-get($delays, hole_delay);
+
+
 
 .loading {
   display: flex;
@@ -30,8 +62,6 @@
 }
 
 
-@keyframes loading {
-  to {
-    transform: rotate(1turn);
-  }
-}
+
+
+
